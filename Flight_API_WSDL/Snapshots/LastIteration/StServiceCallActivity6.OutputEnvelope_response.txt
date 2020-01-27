@@ -1,1 +1,1 @@
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><CreateFlightOrderResponse xmlns="HP.SOAQ.SampleApp"><CreateFlightOrderResult xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><OrderNumber>107</OrderNumber><TotalPrice>240.8</TotalPrice></CreateFlightOrderResult></CreateFlightOrderResponse></s:Body></s:Envelope>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><s:Fault><faultcode>s:Client</faultcode><faultstring xml:lang="en-US">Specify a flight date later than today.</faultstring></s:Fault></s:Body></s:Envelope>
