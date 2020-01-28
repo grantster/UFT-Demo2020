@@ -46,7 +46,7 @@
     	int reportLevelInTree;
         HP.ST.Fwk.ReportCreator.QTPEngine.QTPEngineReportCreator reportCreator;
     	
-    	public BindDirection bind_dir2 = null;
+    	public BindDirection bind_dir1 = null;
         
         public IEnumerable<FeaturesGroup> LicensedFeatures
         {
@@ -193,12 +193,12 @@
             _flow.StServiceCallActivity6.IsAsync=false;
             _flow.StServiceCallActivity6.TargetNamespace=@"http://tempuri.org/";
             _flow.StServiceCallActivity6.ListenOnPort = (int)0;
-            VTDPropertyInfoBase pi3 = new VTDPropertyInfoBase("InputEnvelope","/*[local-name(.)='Envelope'][1]/*[local-name(.)='Body'][1]/*[local-name(.)='GetFlights'][1]/*[local-name(.)='FlightDate'][1]");
-            VTDBaseGetter binding_getter2 = new VTDXPathGetter(pi3,XmlTypeCode.DateTime);
-            VTDPropertyInfoBase pi4 = new VTDPropertyInfoBase("InputEnvelope","/*[local-name(.)='Envelope'][1]/*[local-name(.)='Body'][1]/*[local-name(.)='CreateFlightOrder'][1]/*[local-name(.)='FlightOrder'][1]/*[local-name(.)='DepartureDate'][1]");
-            VTDBaseSetter binding_setter2 = new VTDXPathSetter(pi4,XmlTypeCode.DateTime);
-            bind_dir2 = new BindDirection(_flow.StServiceCallActivity4,binding_getter2,binding_setter2,BindTargetType.ToInProperty);
-            _flow.StServiceCallActivity6.InDirections.Add(bind_dir2);
+            VTDPropertyInfoBase pi1 = new VTDPropertyInfoBase("InputEnvelope","/*[local-name(.)='Envelope'][1]/*[local-name(.)='Body'][1]/*[local-name(.)='GetFlights'][1]/*[local-name(.)='FlightDate'][1]");
+            VTDBaseGetter binding_getter1 = new VTDXPathGetter(pi1,XmlTypeCode.DateTime);
+            VTDPropertyInfoBase pi2 = new VTDPropertyInfoBase("InputEnvelope","/*[local-name(.)='Envelope'][1]/*[local-name(.)='Body'][1]/*[local-name(.)='CreateFlightOrder'][1]/*[local-name(.)='FlightOrder'][1]/*[local-name(.)='DepartureDate'][1]");
+            VTDBaseSetter binding_setter1 = new VTDXPathSetter(pi2,XmlTypeCode.DateTime);
+            bind_dir1 = new BindDirection(_flow.StServiceCallActivity4,binding_getter1,binding_setter1,BindTargetType.ToInProperty);
+            _flow.StServiceCallActivity6.InDirections.Add(bind_dir1);
             XmlDocument StServiceCallActivity6_ExpectedOutputAttachments_Document = new XmlDocument();
             StServiceCallActivity6_ExpectedOutputAttachments_Document.PreserveWhitespace = true;
             StServiceCallActivity6_ExpectedOutputAttachments_Document.LoadXml(
