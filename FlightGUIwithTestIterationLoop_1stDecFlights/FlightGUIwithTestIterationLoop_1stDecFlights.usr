@@ -34,7 +34,7 @@ Lang=none
 
 [TulipInfo]
 ProductName=Micro Focus Unified Functional Testing
-Version=15.0
+Version=15.0.2
 
 [TulipAddins]
 AI=
@@ -43,7 +43,6 @@ File Content=
 Insight=
 Windows Applications=
 TEA=
-Web=
 .NET=
 WPF=
 XML=
